@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 
+Global Styles
+====================================================
+*/
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* 
+Typeography
+====================================================
+*/
+h1,
+h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 32px;
+  align-self: start;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: #ffe600;
+}
+/* 
+Layout
+====================================================
+*/
+.main-grid {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 350px));
+  padding: 0 3em;
+}
+
+/* 
+Hero Section
+====================================================
+*/
+.hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 9em 0;
+}
+
+.hero-title,
+.hero-subtitle {
+  color: white;
+}
+
+.hero-title {
+  grid-column: 1 / span 2;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-title span {
+  color: #ffe600;
+}
+.hero-subtitle {
+  grid-column: 1 / span 2;
+  font-size: 1.125rem;
+  margin-bottom: 4em;
+}
+.hero-subtitle span {
+  font-weight: bold;
+}
+
+.hero .btn {
+  grid-column: 1 / 1;
+}
