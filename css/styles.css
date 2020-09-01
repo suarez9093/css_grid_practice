@@ -53,7 +53,12 @@ Layout
   grid-template-columns: repeat(3, minmax(150px, 350px));
   padding: 0 3em;
 }
-
+.info-container {
+  /* border: 1px solid red; */
+  margin-top: 5em;
+  grid-column: 1 / -1;
+  text-align: center;
+}
 /* 
 Hero Section
 ====================================================
@@ -91,4 +96,20 @@ Hero Section
 
 .hero .btn {
   grid-column: 1 / 1;
+}
+
+/* 
+Info Section
+====================================================
+*/
+.info-title::after {
+  content: "";
+  display: block;
+  background-color: #ffe600;
+  width: 100px;
+  height: 4px;
+  margin: 1em auto;
+}
+.info-card span {
+  font-weight: bold;
 }
